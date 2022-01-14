@@ -16,7 +16,25 @@
     padding: 43px 20px;
   }
 
+  &__cafe {
+    margin-bottom: 25px;
+    width: 80px;
+
+    border-radius: 4px;
+    background-color: #f0d1a5;
+  }
+
+  &__food {
+    margin-bottom: 25px;
+    width: 130px;
+
+    border-radius: 4px;
+    background-color: #c2e297;
+  }
+
   &__place-name {
+    text-align: center;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
