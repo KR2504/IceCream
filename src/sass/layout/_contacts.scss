@@ -1,0 +1,89 @@
+.section-contacts {
+  background-color: $bkg-accent-color;
+  &__list {
+    margin-bottom: -20px;
+  }
+
+  &__item {
+    max-width: 220px;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    background-color: $primary-white-color;
+  }
+  &__thumb {
+    padding: 43px 20px;
+  }
+
+  &__place-name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    color: $primary-white-color;
+  }
+
+  &__city-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    color: $title-color;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &__tel {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &__mail {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &__button {
+    &--first {
+    }
+    &--second {
+    }
+  }
+}
+
+.aside {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  &__item {
+  }
+
+  &__work-days {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: $title-color;
+  }
+
+  &__work-time {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+
+    color: $secondary-accent-color;
+  }
+  &__work-time--margin {
+    margin-bottom: 10px;
+  }
+}
