@@ -1,4 +1,4 @@
-.section-contacts {
+.contacts {
   background-color: $bkg-accent-color;
   &__list {
     margin-bottom: -20px;
@@ -16,21 +16,34 @@
     padding: 43px 20px;
   }
 
+  &__cafe {
+    margin-bottom: 25px;
+    width: 80px;
+
+    border-radius: 4px;
+    background-color: #f0d1a5;
+  }
+
+  &__food {
+    margin-bottom: 25px;
+    width: 130px;
+
+    border-radius: 4px;
+    background-color: #c2e297;
+  }
+
   &__place-name {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
+    text-align: center;
+
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
 
     color: $primary-white-color;
   }
 
   &__city-name {
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
+
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
 
     color: $title-color;
   }
@@ -38,21 +51,15 @@
   &__text {
     margin-bottom: 25px;
 
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
+    @include font($fw: 500, $fz: 12px, $lh: 1.5, $ls: 0.04em);
   }
 
   &__tel {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
+    @include font($fw: 500, $fz: 12px, $lh: 1.5, $ls: 0.04em);
   }
 
   &__mail {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
+    @include font($fw: 500, $fz: 12px, $lh: 1.5, $ls: 0.04em);
   }
 
   &__button {
@@ -63,23 +70,20 @@
   }
 }
 
-.aside {
+.wrap {
   margin-top: 25px;
   margin-bottom: 25px;
   &__item {
   }
 
   &__work-days {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
+
     color: $title-color;
   }
 
   &__work-time {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
 
     color: $secondary-accent-color;
   }

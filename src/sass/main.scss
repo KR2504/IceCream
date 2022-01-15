@@ -2,14 +2,15 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+
 @import './utils/vars';
 @import './utils/hidden';
 @import './utils/mixin';
 @import './utils/placeholder';
 
-@import './base/reset';
-
 @import './components/container';
+
+@import './base/reset';
 
 @import './layout/hero';
 @import './layout/products';
