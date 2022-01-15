@@ -1,0 +1,155 @@
+.contacts {
+  background: linear-gradient(0deg, $bkg-accent-color 93%, $primary-white-color 10%);
+
+  &__list {
+    margin-bottom: -20px;
+  }
+
+  &__item {
+    width: 220px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    background-color: $primary-white-color;
+  }
+  &__item--margin {
+    margin-bottom: 54px;
+  }
+  &__thumb {
+    padding: 43px 18px;
+  }
+
+  &__cafe {
+    margin-bottom: 25px;
+    width: 80px;
+
+    border-radius: 4px;
+    background-color: #f0d1a5;
+  }
+
+  &__food {
+    margin-bottom: 25px;
+    width: 130px;
+
+    border-radius: 4px;
+    background-color: #c2e297;
+  }
+
+  &__place-name {
+    text-align: center;
+
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
+
+    color: $primary-white-color;
+  }
+
+  &__city-name {
+    margin-bottom: 10px;
+
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
+
+    color: $title-color;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+
+    @include font($fw: 500, $fz: 12px, $lh: 1.5, $ls: 0.04em);
+  }
+
+  &__tel {
+    @include font($fw: 500, $fz: 12px, $lh: 1.5, $ls: 0.04em);
+    color: inherit;
+
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::before {
+      content: '';
+
+      @include flex($display: flex, $ait: center, $jsc: center);
+
+      margin-bottom: 25px;
+      border: 1px solid #e1e1e1;
+    }
+  }
+
+  &__mail {
+    @include font($fw: 500, $fz: 12px, $lh: 1.5, $ls: 0.04em);
+    color: inherit;
+
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__button {
+    @include font($fw: 700, $fz: 16px, $lh: 1.3, $ls: 0.04em);
+
+    margin-left: auto;
+    margin-right: auto;
+    &--first {
+      margin-bottom: 10px;
+      color: $primary-white-color;
+      background-color: $first-accent-color;
+
+      transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &--second {
+      color: $first-accent-color;
+      background-color: $primary-white-color;
+
+      transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.contacts__button--first:hover,
+.contacts__button--first:focus {
+  background-color: $primary-white-color;
+  color: $first-accent-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.contacts__button--second:hover,
+.contacts__button--second:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: rgba(236, 235, 235, 1);
+}
+
+.contacts__tel:hover,
+.contacts__tel:focus,
+.contacts__mail:hover,
+.contacts__mail:focus {
+  color: $secondary-accent-color;
+}
+
+.wrap {
+  margin-bottom: 25px;
+
+  &::before {
+    content: '';
+
+    @include flex($display: flex, $ait: center, $jsc: center);
+
+    border: 1px solid #e1e1e1;
+  }
+
+  &__work-days {
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
+
+    color: $title-color;
+  }
+
+  &__work-time {
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
+
+    color: $secondary-accent-color;
+  }
+  &__work-time--margin {
+    margin-bottom: 10px;
+  }
+}
