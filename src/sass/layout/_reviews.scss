@@ -1,6 +1,6 @@
 .container {
   @media screen and (min-width: 480px) {
-    width: 480px;
+    width: 320px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -37,13 +37,9 @@
     letter-spacing: 0.04em;
     @media screen and (min-width: 768px) {
       padding: 0 80px;
-      margin-right: 74px;
-      margin-left: 74px;
     }
     @media screen and (min-width: 1200px) {
       padding: 0 88px;
-      margin-right: 177px;
-      margin-left: 177px;
     }
   }
   .reviews__icon-rings {
@@ -74,6 +70,11 @@
   .reviews__item-icon:not(:last-child) {
     padding-right: 18px;
   }
+  .reviews__list-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 86px;
+  }
 }
 .reviews__text-adress {
   font-weight: 500;
@@ -88,10 +89,21 @@
   height: 100%;
 }
 .reviews__list {
-  display: flex;
-  justify-content: center;
   margin-bottom: 86px;
 }
 .reviews__item-icon:not(:last-child) {
   padding-right: 18px;
+}
+
+.test {
+  margin: 0 20px;
+  @media screen and (min-width: 480px) {
+    margin: 0 20px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 74px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 177px;
+  }
 }
