@@ -1,0 +1,90 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 40px;
+  background-color: $bkg-accent-color;
+  background-image: url(/images/about/milk-mob-left.png), url(/images/about/milk-mob-right.png);
+  background-repeat: no-repeat;
+  background-size: 160px 133px;
+  background-position: 0 90%, 100% 90%;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/about/milk-mob-left-2x.png),
+      url(/images/about/milk-mob-right-2x.png);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-size: 200px 173px;
+  }
+
+  &__label {
+    margin-bottom: 15px;
+    font-family: 'Titan One', sans-serif;
+    @include font($fw: 500, $fz: 18px, $lh: 1.17, $ls: 0.04em);
+    text-transform: uppercase;
+    text-align: center;
+    color: $secondary-accent-color;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+    font-family: 'Titan One', sans-serif;
+    @include font($fw: 400, $fz: 34px, $lh: 1.15, $ls: 0.04em);
+    text-transform: uppercase;
+    text-align: center;
+    color: $first-accent-color;
+  }
+
+  &__img {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text-thumb {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+      max-width: 340px;
+    }
+  }
+
+  &__subject {
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 30px;
+    @include font($fw: 500, $fz: 12px, $lh: 1.62, $ls: 0.01em);
+    color: $title-color;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 30px;
+    @include font($fw: 500, $fz: 12px, $lh: 1.62, $ls: 0.01em);
+    color: $text-color;
+  }
+
+  &__btn {
+    @include flex($display: flex, $ait: center, $jsc: center);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @include font($fw: 700, $fz: 14px, $lh: 1.29, $ls: 0.04em);
+    background-color: $primary-white-color;
+    color: $first-accent-color;
+    transition: background-color $transition;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  &__icon {
+    margin-left: 15px;
+  }
+}
