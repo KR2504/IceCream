@@ -1,31 +1,40 @@
 .about {
   padding-top: 125px;
-  padding-bottom: 40px;
+  // padding-bottom is temporary
+  padding-bottom: 130px;
   background-color: $bkg-accent-color;
-  background-image: url(/images/about/milk-mob-left.png), url(/images/about/milk-mob-right.png);
-  background-repeat: no-repeat;
-  background-size: 160px 133px;
-  background-position: 0 90%, 100% 90%;
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/images/about/milk-mob-left-2x.png),
-      url(/images/about/milk-mob-right-2x.png);
-  }
+  @media screen and (max-width: 767px) {
+    background-image: url(/images/about/milk-mob-left.png), url(/images/about/milk-mob-right.png);
+    background-repeat: no-repeat;
+    background-size: 190px auto;
+    background-position: 0 80%, 100% 78%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 200px 173px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/about/milk-mob-left-2x.png),
+        url(/images/about/milk-mob-right-2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 130px;
+    }
   }
 
   &__label {
     margin-bottom: 15px;
     font-family: 'Titan One', sans-serif;
-    @include font($fw: 500, $fz: 18px, $lh: 1.17, $ls: 0.04em);
+    @include font($fw: 400, $fz: 18px, $lh: 1.17, $ls: 0.02em);
     text-transform: uppercase;
     text-align: center;
     color: $secondary-accent-color;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+      @include font($fw: 400, $fz: 26px, $lh: 1.15, $ls: 0.02em);
+    }
   }
 
   &__title {
@@ -35,21 +44,51 @@
     text-transform: uppercase;
     text-align: center;
     color: $first-accent-color;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+      @include font($fw: 400, $fz: 48px, $lh: 1.15, $ls: 0.04em);
+    }
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__img {
+    display: flex;
     width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 46px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: auto;
+      width: auto;
+      margin-right: 17px;
+    }
   }
 
   &__text-thumb {
     max-width: 220px;
-    margin-left: auto;
-    margin-right: auto;
 
     @media screen and (min-width: 480px) {
       max-width: 340px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
     }
   }
 
@@ -58,20 +97,26 @@
     margin-bottom: 30px;
     @include font($fw: 500, $fz: 12px, $lh: 1.62, $ls: 0.01em);
     color: $title-color;
+
+    @media screen and (min-width: 768px) {
+      @include font($fw: 500, $fz: 14px, $lh: 1.76, $ls: 0.01em);
+    }
   }
 
   &__text {
-    margin-bottom: 25px;
     font-family: 'DM Sans', sans-serif;
     margin-bottom: 30px;
     @include font($fw: 500, $fz: 12px, $lh: 1.62, $ls: 0.01em);
     color: $text-color;
+
+    @media screen and (min-width: 768px) {
+      @include font($fw: 500, $fz: 14px, $lh: 1.76, $ls: 0.01em);
+    }
   }
 
   &__btn {
     @include flex($display: flex, $ait: center, $jsc: center);
-    margin-left: auto;
-    margin-right: auto;
+    width: 176px;
     text-align: center;
     @include font($fw: 700, $fz: 14px, $lh: 1.29, $ls: 0.04em);
     background-color: $primary-white-color;
@@ -81,6 +126,10 @@
     &:hover,
     &:focus {
       background-color: #ecebeb;
+    }
+
+    @media screen and (min-width: 768px) {
+      @include font($fw: 700, $fz: 16px, $lh: 1.31, $ls: 0.01em);
     }
   }
 
