@@ -129,7 +129,6 @@
   }
 
   &__subject {
-    font-family: 'DM Sans', sans-serif;
     margin-bottom: 30px;
     @include font($fw: 500, $fz: 12px, $lh: 1.62, $ls: 0.01em);
     color: $title-color;
@@ -145,7 +144,6 @@
 
   &__text {
     margin-bottom: 30px;
-    font-family: 'DM Sans', sans-serif;
     @include font($fw: 500, $fz: 12px, $lh: 1.62, $ls: 0.01em);
     color: $text-color;
 
@@ -162,7 +160,6 @@
     @include flex($display: flex, $ait: center, $jsc: center);
     width: 176px;
     text-align: center;
-    font-family: 'DM Sans', sans-serif;
     @include font($fw: 700, $fz: 14px, $lh: 1.29, $ls: 0.04em);
     background-color: $primary-white-color;
     color: $first-accent-color;
