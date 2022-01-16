@@ -1,4 +1,4 @@
-.container {
+container {
   @media screen and (min-width: 480px) {
     width: 320px;
   }
@@ -9,8 +9,17 @@
     width: 1280px;
   }
 }
-.swiper-wrapper {
+.reviews {
   margin-top: 80px;
+  @media screen and (min-width: 480px) {
+    margin: 0 20px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 74px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 0 177px;
+  }
   .costumer {
     margin-left: auto;
     margin-right: auto;
@@ -97,14 +106,4 @@
 .test {
   margin: 0 20px;
   background-color: #fafafa;
-
-  @media screen and (min-width: 480px) {
-    margin: 0 20px;
-  }
-  @media screen and (min-width: 768px) {
-    margin: 0 74px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin: 0 177px;
-  }
 }
