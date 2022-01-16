@@ -1,25 +1,6 @@
-container {
-  @media screen and (min-width: 480px) {
-    width: 320px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
-}
 .reviews {
   margin-top: 80px;
-  @media screen and (min-width: 480px) {
-    margin: 0 20px;
-  }
-  @media screen and (min-width: 768px) {
-    margin: 0 74px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin: 0 177px;
-  }
+
   .costumer {
     margin-left: auto;
     margin-right: auto;
