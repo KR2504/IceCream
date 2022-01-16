@@ -1,7 +1,8 @@
 .header {
+    margin: 0;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color:$secondary-accent-color;
+    background-color:#FFB8CA;
     @media screen and (min-width: 768px) {
         padding-top: 35px;
         padding-bottom: 35px;
@@ -44,10 +45,6 @@
             background: none;
             outline: none;
 
-            .open-menu__icon{
-                fill: black;
-            }
-
             @media screen and (min-width: 1280px) {
                 display: none;
             }
@@ -58,8 +55,7 @@
             width: 209px;
             height: 44px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            font-family: DM Sans;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 16px;
             line-height: 1.4;
             align-items: center;
@@ -105,7 +101,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: $secondary-accent-color;
+    background-color: #FFB8CA;
 
     .left{
         z-index: 3;
@@ -170,24 +166,48 @@
             display: block;
         }
     }
-    .circle{
+    .circle {
         position: absolute;
         z-index: 1;
         left:36px;
-        height: 344px;
-        width: 344px;
+        top:15px;
         border-radius: 50%;
         background-color: #FFA5BA;
+        @media screen and (min-width: 1280px) {
+            width: 600px;
+            height: 600px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 600px;
+            height: 600px;
+        }
+        @media screen and (min-width: 320px) {
+            width: 282px;
+            height: 282px;
+        }
     }
 
-    .right{
+    .right {
         display: flex;
         flex-direction: column;
         ul{
             display: none;
         }
         .so-tasty{
-            display: none;
+            position: absolute;
+            @media screen and (min-width: 320px) and (max-width: 480px){
+                display: none;
+            } 
+            @media screen and (min-width: 768px) {
+                top: 218px;
+                left: 440px;
+            }
+            @media screen and (min-width: 1280px) {
+                top: 218px;
+                left: 895px;
+            }
         }
     }
 }
+
+
