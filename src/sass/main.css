@@ -13,20 +13,22 @@
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
-.products__item-info, .products__button-svg, .gallery {
+.products__item-info,
+.products__button-svg,
+.gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .container {
@@ -69,7 +71,8 @@
 }
 
 body {
-  font-family: 'DM Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'DM Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
   background-color: white;
   color: #907e82;
 }
@@ -234,7 +237,7 @@ img {
   left: 50%;
   top: -113px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media screen and (min-width: 768px) {
@@ -285,8 +288,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .products__item-title-circle {
@@ -391,18 +394,20 @@ img {
   margin-right: auto;
   margin-left: auto;
   -webkit-transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.products__button:active, .products__button:focus, .products__button:hover {
+.products__button:active,
+.products__button:focus,
+.products__button:hover {
   -webkit-box-shadow: 1px 3px 8px 1px #00000029;
-          box-shadow: 1px 3px 8px 1px #00000029;
+  box-shadow: 1px 3px 8px 1px #00000029;
   -webkit-box-shadow: 0px 3px 3px 1px #0000000f;
-          box-shadow: 0px 3px 3px 1px #0000000f;
+  box-shadow: 0px 3px 3px 1px #0000000f;
   -webkit-box-shadow: 0px 1px 3px 1px #0000001f;
-          box-shadow: 0px 1px 3px 1px #0000001f;
+  box-shadow: 0px 1px 3px 1px #0000001f;
 }
 
 .products__button:active .products__button-svg {
@@ -411,7 +416,7 @@ img {
 
 .products__button-svg {
   -webkit-transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #d41342;
 }
 
@@ -429,9 +434,13 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .about {
-    background-image: url(/images/about/milk-mob-left-2x.png), url(/images/about/milk-mob-right-2x.png);
+    background-image: url(/images/about/milk-mob-left-2x.png),
+      url(/images/about/milk-mob-right-2x.png);
   }
 }
 
@@ -449,16 +458,21 @@ img {
 
 @media screen and (min-width: 1280px) {
   .about {
-    background-image: url(/images/about/milk-desktop-left.png), url(/images/about/milk-desktop-right.png);
+    background-image: url(/images/about/milk-desktop-left.png),
+      url(/images/about/milk-desktop-right.png);
     background-repeat: no-repeat;
     background-size: 640px auto;
     background-position: 0 80%, 100% 78%;
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about {
-    background-image: url(/images/about/milk-desktop-left-2x.png), url(/images/about/milk-desktop-right-2x.png);
+    background-image: url(/images/about/milk-desktop-left-2x.png),
+      url(/images/about/milk-desktop-right-2x.png);
   }
 }
 
@@ -649,11 +663,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 176px;
   text-align: center;
   font-weight: 700;
@@ -666,7 +680,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about__btn:hover, .about__btn:focus {
+.about__btn:hover,
+.about__btn:focus {
   background-color: #ecebeb;
 }
 
@@ -796,7 +811,13 @@ img {
 @media screen and (min-width: 320px) {
   .gallery {
     padding-top: 97px;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(32%, white), color-stop(20%, #fff5f6));
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(32%, white),
+      color-stop(20%, #fff5f6)
+    );
     background: linear-gradient(0deg, white 32%, #fff5f6 20%);
   }
 }
@@ -804,7 +825,13 @@ img {
 @media screen and (min-width: 768px) {
   .gallery {
     padding-top: 140px;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(39%, white), color-stop(20%, #fff5f6));
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(39%, white),
+      color-stop(20%, #fff5f6)
+    );
     background: linear-gradient(0deg, white 39%, #fff5f6 20%);
   }
 }
@@ -812,7 +839,13 @@ img {
 @media screen and (min-width: 1280px) {
   .gallery {
     padding-top: 139px;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, white), color-stop(20%, #fff5f6));
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(45%, white),
+      color-stop(20%, #fff5f6)
+    );
     background: linear-gradient(0deg, white 45%, #fff5f6 20%);
   }
 }
@@ -841,24 +874,29 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   letter-spacing: 0.04em;
-  background-image: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 49px, #e1e1e1 0, #e1e1e1 51px);
+  background-image: repeating-linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 49px,
+    #e1e1e1 0,
+    #e1e1e1 51px
+  );
 }
 
 @media screen and (min-width: 768px) {
   .reviews .reviews__comment {
-    pading: 0 80px;
+    padding: 0 80px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .reviews .reviews__comment {
-    pading: 0 88px;
+    padding: 0 88px;
   }
 }
 
@@ -929,13 +967,25 @@ img {
 .contacts {
   padding-top: 86px;
   padding-bottom: 34pc;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(90%, #fff5f6), color-stop(10%, white));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(90%, #fff5f6),
+    color-stop(10%, white)
+  );
   background: linear-gradient(0deg, #fff5f6 90%, white 10%);
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, #fff5f6), color-stop(10%, white));
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(75%, #fff5f6),
+      color-stop(10%, white)
+    );
     background: linear-gradient(0deg, #fff5f6 75%, white 10%);
     padding-top: 119px;
     padding-bottom: 79px;
@@ -946,18 +996,25 @@ img {
   .contacts {
     padding-top: 132px;
     padding-bottom: 86px;
-    background-image: url(/images/contacts/contactsbg.png), -webkit-gradient(linear, left bottom, left top, color-stop(71%, #fff5f6), color-stop(10%, white));
-    background-image: url(/images/contacts/contactsbg.png), linear-gradient(0deg, #fff5f6 71%, white 10%);
+    background-image: url(/images/contacts/contactsbg.png),
+      -webkit-gradient(linear, left bottom, left top, color-stop(71%, #fff5f6), color-stop(10%, white));
+    background-image: url(/images/contacts/contactsbg.png),
+      linear-gradient(0deg, #fff5f6 71%, white 10%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 60%, 100% 78%;
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(/images/contacts/contactsbg2x.png), -webkit-gradient(linear, left bottom, left top, color-stop(71%, #fff5f6), color-stop(10%, white));
-    background-image: url(/images/contacts/contactsbg2x.png), linear-gradient(0deg, #fff5f6 71%, white 10%);
+    background-image: url(/images/contacts/contactsbg2x.png),
+      -webkit-gradient(linear, left bottom, left top, color-stop(71%, #fff5f6), color-stop(10%, white));
+    background-image: url(/images/contacts/contactsbg2x.png),
+      linear-gradient(0deg, #fff5f6 71%, white 10%);
   }
 }
 
@@ -974,8 +1031,8 @@ img {
 @media screen and (min-width: 1280px) {
   .contacts__list {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-left: -31px;
     margin-bottom: 86px;
   }
@@ -985,7 +1042,7 @@ img {
   width: 100%;
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   background-color: white;
 }
@@ -993,7 +1050,7 @@ img {
 @media screen and (min-width: 768px) {
   .contacts__item {
     -ms-flex-preferred-size: calc((100% - 3 * 20px) / 3);
-        flex-basis: calc((100% - 3 * 20px) / 3);
+    flex-basis: calc((100% - 3 * 20px) / 3);
     margin-left: 20px;
     margin-bottom: 0;
   }
@@ -1002,7 +1059,7 @@ img {
 @media screen and (min-width: 1280px) {
   .contacts__item {
     -ms-flex-preferred-size: 330px;
-        flex-basis: 330px;
+    flex-basis: 330px;
     margin-left: 31px;
     margin-right: 0;
   }
@@ -1170,11 +1227,11 @@ img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -1203,10 +1260,15 @@ img {
   margin-bottom: 10px;
   color: white;
   background-color: #d41342;
-  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -1219,10 +1281,15 @@ img {
 .contacts__button--second {
   color: #d41342;
   background-color: white;
-  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__icon {
@@ -1234,14 +1301,18 @@ img {
 .contacts__button--first:focus {
   background-color: white;
   color: #d41342;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .contacts__button--second:hover,
 .contacts__button--second:focus {
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: #ecebeb;
 }
 
@@ -1258,11 +1329,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 25px;
   margin-top: 25px;
   border: 1px solid #e1e1e1;
@@ -1281,11 +1352,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 25px;
   border: 1px solid #e1e1e1;
 }
@@ -1398,8 +1469,8 @@ img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     max-width: 100%;
   }
 }
@@ -1410,10 +1481,10 @@ img {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     max-width: 100%;
     height: 100%;
   }
@@ -1426,11 +1497,11 @@ img {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     max-width: 100%;
     height: 100%;
   }
@@ -1529,8 +1600,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-bottom: 46px;
 }
 
@@ -1557,12 +1628,13 @@ img {
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__link:hover, .footer__link:focus {
+.footer__link:hover,
+.footer__link:focus {
   fill: #d41443;
 }
 
