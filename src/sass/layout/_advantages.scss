@@ -3,31 +3,76 @@
 
   &__list {
     width: 230px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      width: auto;
+      margin-left: -60px;
+      // padding-bottom: 140px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-left: -30px;
+    }
   }
 
   &__item {
     padding-top: 38px;
+    @media screen and (min-width: 768px) {
+      width: 180px;
+      margin-left: 60px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 330px;
+      margin-left: 30px;
+    }
   }
 
   &__icon {
     fill: $secondary-accent-color;
     margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__facts {
-    font-family: Titan One;
+    font-family: 'Titan One';
     font-weight: 400;
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $first-accent-color;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 1.15;
+
+      text-transform: lowercase;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 1.14;
+
+      margin-bottom: 13px;
+    }
   }
 
   &__text {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.02em;
+    color: $title-color;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.75;
+    }
   }
 }
