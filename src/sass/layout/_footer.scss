@@ -146,11 +146,12 @@ $colors: (
   }
   & {
     @media screen and (min-width: 1280px) {
-      width: 474px;
+      width: 478px;
       height: 66px;
       margin-top: 15px;
       font-size: 58px;
       line-height: 1.14;
+      letter-spacing: 0.06em;
     }
   }
 }
