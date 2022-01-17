@@ -1,6 +1,7 @@
 .about {
   padding-top: 125px;
   background-color: $bkg-accent-color;
+  padding-bottom: 39px;
 
   @media screen and (max-width: 767px) {
     background-image: url(/images/about/milk-mob-left.png), url(/images/about/milk-mob-right.png);
@@ -23,9 +24,11 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 130px;
+    padding-bottom: 66px;
   }
 
   @media screen and (min-width: 1280px) {
+    padding-bottom: 39px;
     background-image: url(/images/about/milk-desktop-left.png),
       url(/images/about/milk-desktop-right.png);
     background-repeat: no-repeat;
