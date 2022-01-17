@@ -14,9 +14,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 50px;
     width: 100%;
-    margin-bottom: 30px;
     letter-spacing: 0.04em;
     background-image: repeating-linear-gradient(
       hsla(0, 0%, 100%, 0),
@@ -46,45 +44,37 @@
     color: #000000;
     margin-bottom: 30px;
   }
-  .reviews__icon {
-    width: 12.4px;
-    height: 100%;
+  .reviews__icon-comment {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 7%;
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+      margin-top: 5%;
+      margin-left: 10%;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 3%;
+      margin-left: 9%;
+    }
   }
-  .reviews__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 86px;
-  }
-  .reviews__item-icon:not(:last-child) {
-    padding-right: 18px;
-  }
-  .reviews__list-icon {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 86px;
-  }
-}
-.reviews__text-adress {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 2.6;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 86px;
-  padding-bottom: 30px;
-}
-.reviews__icon {
-  width: 12.4px;
-  height: 100%;
-}
-.reviews__list {
-  margin-bottom: 86px;
-}
-.reviews__item-icon:not(:last-child) {
-  padding-right: 18px;
 }
 
 .test {
-  margin: 0 20px;
-  background-color: #fafafa;
+  margin: 0 35px;
+  background-color: rgba(250, 250, 250, 0.5);
+}
+.done {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 43px;
+  @media screen and (min-width: 768px) {
+    width: 460px;
+    padding-top: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 750px;
+    padding-top: 47px;
+  }
 }
