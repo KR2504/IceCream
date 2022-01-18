@@ -1,13 +1,16 @@
-<header class="header container">
+<header class="header">
     <div class="header__container">
         <div class="logo">
-            <img class="logo__img" src="./images/logo-1x.png" srcset="./images/logo-1x.png 1x"
-                srcset="/images/logo-2x.png 2x" alt="logo">
+            <img class="logo__img"
+                src="./images/logo-1x.png" 
+                srcset="./images/logo-1x.png 1x, 
+                /images/logo-2x.png 2x" 
+                alt="logo">
         </div>
         <nav>
             <ul class="header__nav-items">
                 <li class="header__nav-item">
-                    <a class="header__nav-link header__nav-link--red" href="./index.html">Home</a>
+                    <a class="header__nav-link " href="./index.html">Home</a>
                 </li>
                 <li class="header__nav-item">
                     <a class="header__nav-link" href="#about-us">About us</a>
@@ -23,26 +26,28 @@
                 </li>
             </ul>
         </nav>
-        <button class="btn header__button-menu" type="button">
+        <button class="header__button-menu" type="button">
             <svg class="header__icons" width="25" height="25">
                 <use class="header__icon-open" href="./images/icons.svg#icon-open-menu"></use>
             </svg>
         </button>
-        <button class="btn header__button" type="button">
+        <button class="btn header__button-now" type="button">
             <span>Buy now ></span>
         </button>
-    </div>
-    ​
+    </div>  
     <div class="header__table-menu">
-        <button class="btn" type="button">
-            <svg class="nav__list--close" width="25" height="25">
-                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+        <button class="header__button-close" type="button">
+            <svg  width="14" height="14" class="header__button-close-svg">
+                <use  href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
+        <button class="header__table-menu-button-now btn" type="button">
+            <span>Buy now ></span>
+        </button> 
         <nav>
-            <ul class="header__nav-items">
+            <ul class="header__nav-items-menu">
                 <li class="header__nav-item">
-                    <a class="header__nav-link header__nav-link--red" href="./index.html">Home</a>
+                    <a class="header__nav-link" href="./index.html">Home</a>
                 </li>
                 <li class="header__nav-item">
                     <a class="header__nav-link" href="#about-us">About us</a>
@@ -58,19 +63,14 @@
                 </li>
             </ul>
         </nav>
-        <button class="header__button-buy button" type="button">
-            <span>Buy now ></span>
-        </button>
-        ​
-    </div>
+    </div>    
     <div class="header__title-thumb">
-        <h1 class="header__title">ice cream made with <span class="header__title-red">passion</span></h1>
-        <div class="header__title-buttons">
-            <button class="btn header__title-button--red" type="button">Products</button>
-            <button class="btn header__title-button--white" type="button">How it's made?</button>
-        </div>
+    <h1 class="header__title">ice cream<br>made with<br><span class="header__title-red">passion</span></h1>
+    <div class="header__title-buttons">
+        <a class="btn header__title-button" href="#products">Products</a>
+        <a class="btn header__title-button-second" href="#how-its-made">How it's made?</a>
     </div>
-    ​
+    </div>
     <div class="header__img-milk-thumb">
         <picture>
             <source srcset="./images/hero/milk-1x-mac.png 1x,
@@ -79,25 +79,21 @@
             <source srcset="./images/hero/milk-1x-tab.png 1x,
                             ./images/hero/milk-2x-tab.png 2x
                             " media="(min-width: 768px)">
-        </picture>
-        <img class="hero-img" src="./images/hero/milk-1x-mac.png" alt="milk">
-
+            <img  class="hero-img" src="./images/hero/milk-1x-mac.png" alt="milk"> 
+        </picture>  
     </div>
     <div class="header__text-milk-wrap">
-        <p class="header__text-milk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit rem
-            saepe voluptatibus repellendus. This is a text</p>
-    </div>
-    <button class="header__milk-button">
-        <svg width="24 " height="20" xmlns="http://www.w3.org/2000/svg" class="products__button-svg"
+        <p class="header__text-milk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit rem saepe voluptatibus repellendus. This is a text</p>
+    </div>   
+        <button class="header__milk-button" type="button">
+            <svg width="24 " height="20"
+            xmlns="http://www.w3.org/2000/svg" 
+            class="header__button-svg" 
             viewBox="0 0 512 512">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
-                d="M268 112l144 144-144 144M392 256H100" />
-        </svg>
-    </button>
-
-
-
-    <div class="header__big-icecream">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100" />
+            </svg>
+        </button>
+        <div class="header__big-icecream">
         <picture>
             <source srcset="./images/hero/icecream-1x-mac.png 1x,
                             ./images/hero/icecream-2x-mac.png 2x
@@ -108,43 +104,34 @@
             <source srcset="./images/hero/icecream-1x-mb.png 1x,
                             ./images/hero/icecream-2x-mb.png 2x
                             " media="(min-width: 320px)">
+            <img class="big-icecream" src="./images/hero/icecream-1x-mac.png" alt="Icecream">
         </picture>
-        <img class="big-icecream" src="./images/hero/icecream-1x-mac.png" alt="Icecream">
-    </div>
-    ​
-    <div class="header__circle"></div>
-    <div class="header__right-text-container">
-        <div class="header__right-text-thumb">
-            <div class="header__right-text-number">16<div class="header__right-text-circle"></div>
+        </div>
+        <div class="header__circle"></div>
+        <div class="header__right-text-container">
+            <div class="header__right-text-thumb">
+                <div class="header__right-text-number">16
+                    <div class="header__right-text-circle"></div>
+                    <div class="header__right-text-desk">cafes</div>
+                </div>
+                <div class="header__right-text-thumb">
+                    <div class="header__right-text-number">23
+                        <div class="header__right-text-circle"></div>
+                        <div class="header__right-text-desk">food trucks</div>
+    
+                    </div>
+                </div>
+                <div class="header__so-tasty-img-thumb">
+                    <picture>
+                        <source srcset="./images/hero/girl-1x-mac.png 1x,
+                                    ./images/hero/girl-2x-mac.png
+                                    " media="(min-width: 1280px)">
+                        <source srcset="./images/hero/girl-1x-tab.png 1x,
+                                    ./images/hero/girl-2x-tab.png 2x
+                                    " media="(min-width: 768px)">
+                        <img src="./images/hero/girl-1x-mac.png" alt="So Tasty">
+                    </picture>
+                </div>
             </div>
-            <div class="header__right-text-desk">cafes</div>
         </div>
-        <div class="header__right-text-thumb"></div>
-        <div class="header__right-text-number">23<div class="header__right-text-circle"></div>
-        </div>
-        <div class="header__right-text-desk">food trucks</div>
-
-    </div>
-    </div>
-    <div class="header__so-tasty-img-thumb">
-        <picture>
-            <source srcset="./images/hero/girl-1x-mac.png 1x,
-                                ./images/hero/girl-2x-mac.png
-                                " media="(min-width: 1280px)">
-            <source srcset="./images/hero/girl-1x-tab.png 1x,
-                                ./images/hero/girl-2x-tab.png 2x
-                                " media="(min-width: 768px)">
-        </picture>
-        <img src="./images/hero/girl-1x-mac.png" alt="So Tasty">
-    </div>
-
-    ​
-    ​
 </header>
-
-
-
-
-
-
-
