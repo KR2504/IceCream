@@ -3,19 +3,22 @@
 
   &__list {
     width: 230px;
+    // margin-top: 39px;
     @media screen and (min-width: 768px) {
       display: flex;
       width: auto;
       margin-left: -60px;
-      // padding-bottom: 140px;
+
+      // margin-top: 66px;
     }
     @media screen and (min-width: 1280px) {
       margin-left: -30px;
+
+      // margin-top: 39px;
     }
   }
 
   &__item {
-    padding-top: 38px;
     @media screen and (min-width: 768px) {
       width: 180px;
       margin-left: 60px;
