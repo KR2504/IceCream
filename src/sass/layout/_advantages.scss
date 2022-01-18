@@ -3,6 +3,7 @@
 
   &__list {
     width: 230px;
+    margin-top: -38px;
     @media screen and (min-width: 768px) {
       display: flex;
       width: auto;
@@ -15,7 +16,7 @@
   }
 
   &__item {
-    padding-top: 38px;
+    margin-top: 38px;
     @media screen and (min-width: 768px) {
       width: 180px;
       margin-left: 60px;
