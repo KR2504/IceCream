@@ -1,15 +1,15 @@
 .contacts {
   padding-top: 86px;
-  padding-bottom: 34px;
+  padding-bottom: 113px;
   background: linear-gradient(0deg, $bkg-accent-color 90%, $primary-white-color 10%);
   @media screen and (min-width: 768px) {
     background: linear-gradient(0deg, $bkg-accent-color 75%, $primary-white-color 10%);
     padding-top: 119px;
-    padding-bottom: 79px;
+    padding-bottom: 158px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 132px;
-    padding-bottom: 86px;
+    padding-bottom: 165px;
 
     background-image: url(/images/contacts/contactsbg.png),
       linear-gradient(0deg, $bkg-accent-color 71%, $primary-white-color 10%);
@@ -27,6 +27,10 @@
   }
 
   &__list {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 54px;
+    }
+
     @media screen and (min-width: 768px) {
       display: flex;
       margin-left: -20px;
@@ -41,9 +45,6 @@
 
   &__item {
     width: 100%;
-    // width: 220px;
-    // margin-right: auto;
-    // margin-left: auto;
     margin-bottom: 20px;
 
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -63,9 +64,10 @@
   }
   &__item--margin {
     @media screen and (max-width: 767px) {
-      margin-bottom: 54px;
+      margin-bottom: 0;
     }
   }
+
   &__thumb {
     padding: 43px 18px;
 
@@ -77,48 +79,35 @@
     }
   }
 
-  &__cafe {
+  &__place-name {
+    display: block;
+    text-align: center;
     margin-bottom: 25px;
-
     width: 80px;
+    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
+
+    color: $primary-white-color;
 
     border-radius: 4px;
     background-color: rgba(240, 209, 165, 1);
 
     @media screen and (min-width: 768px) {
+      @include font($fw: 500, $fz: 16px, $lh: 1.86, $ls: 0.04em);
       margin-bottom: 30px;
       width: 73px;
       border-radius: 6px;
     }
   }
-
-  &__food {
-    margin-bottom: 25px;
+  &__place-name--food {
     width: 130px;
-
-    border-radius: 4px;
     background-color: rgba(194, 226, 151, 1);
-
     @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
       width: 138px;
-      border-radius: 6px;
-    }
-  }
-
-  &__place-name {
-    text-align: center;
-
-    @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
-
-    color: $primary-white-color;
-
-    @media screen and (min-width: 768px) {
-      @include font($fw: 500, $fz: 16px, $lh: 1.86, $ls: 0.04em);
     }
   }
 
   &__city-name {
+    display: block;
     margin-bottom: 10px;
 
     @include font($fw: 500, $fz: 12px, $lh: 1.86, $ls: 0.04em);
@@ -146,6 +135,12 @@
       margin-bottom: 30px;
 
       @include font($fw: 500, $fz: 14px, $lh: 1.66, $ls: 0.04em);
+    }
+  }
+  &__links {
+    margin-top: 25px;
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
     }
   }
 
@@ -240,17 +235,22 @@
 }
 
 .wrap {
+  &__item--margin {
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
   &::after {
     content: '';
 
     @include flex($display: flex, $ait: center, $jsc: center);
 
-    margin-bottom: 25px;
-    margin-top: 25px;
     border: 1px solid #e1e1e1;
 
+    margin-top: 25px;
+
     @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
       margin-top: 30px;
     }
   }
@@ -259,9 +259,10 @@
     content: '';
 
     @include flex($display: flex, $ait: center, $jsc: center);
-    margin-bottom: 25px;
 
     border: 1px solid #e1e1e1;
+
+    margin-bottom: 25px;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 30px;
@@ -291,12 +292,6 @@
     }
     @media screen and (min-width: 1280px) {
       @include font($fw: 500, $fz: 16px, $lh: 1.86, $ls: 0.04em);
-    }
-  }
-  &__work-time--margin {
-    margin-bottom: 10px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 16px;
     }
   }
 }
