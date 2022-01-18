@@ -2,7 +2,6 @@
   padding-top: 122px;
   padding-bottom: 98px;
 
-  background-color: #E5E5E5;
   @media screen and (min-width: 768px) {
     padding-bottom: 112px;
   }
@@ -100,11 +99,10 @@
     background-color: #c2e297;
   }
 
-
   &__item--yellow::before,
   &__item--green::before,
   &__item--pink::before {
-    content: " ";
+    content: ' ';
     display: block;
     position: absolute;
 
@@ -127,18 +125,17 @@
       top: -210px;
     }
   }
-  &__item--yellow::before{
-      background-image: url('/images/products/ice_coffee@2x.png');
+  &__item--yellow::before {
+    background-image: url('/images/products/ice_coffee@2x.png');
   }
 
-  &__item--green::before{
-     background-image: url('/images/products/milkshakes@2x.png');
+  &__item--green::before {
+    background-image: url('/images/products/milkshakes@2x.png');
   }
 
-  &__item--pink::before{
-      background-image: url('/images/products/ice_cream@2x.png');
+  &__item--pink::before {
+    background-image: url('/images/products/ice_cream@2x.png');
   }
-
 
   &__img {
     height: auto;
@@ -164,10 +161,10 @@
       line-height: 1.13;
     }
   }
-  &__item-title::after{
-    content: "\2022 \2022 \2022 ";
+  &__item-title::after {
+    content: '\2022 \2022 \2022 ';
     display: block;
-    margin: 30px auto 0; 
+    margin: 30px auto 0;
   }
 
   &__item-info {
@@ -258,15 +255,17 @@
 
     margin-right: auto;
     margin-left: auto;
+
+    background-color: $primary-white-color;
     transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__button:active,
-  &__button:focus,
   &__button:hover {
     box-shadow: 1px 3px 8px 1px #00000029;
     box-shadow: 0px 3px 3px 1px #0000000f;
     box-shadow: 0px 1px 3px 1px #0000001f;
+    background-color: #ecebeb;
   }
 
   &__button:active &__button-svg {
