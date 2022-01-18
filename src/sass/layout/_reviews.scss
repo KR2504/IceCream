@@ -1,5 +1,5 @@
 .reviews {
-  margin-top: 80px;
+  padding-top: 80px;
 
   .costumer {
     margin-left: auto;
@@ -28,13 +28,6 @@
       pading: 0 88px;
     }
   }
-  .reviews__icon-rings {
-    width: 32px;
-    height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .reviews__text-adress {
     font-weight: 500;
     font-size: 14px;
@@ -42,21 +35,7 @@
     text-align: center;
     color: #000000;
     margin-bottom: 30px;
-  }
-  .reviews__icon-comment {
-    position: absolute;
-    margin-top: 5%;
-    margin-left: 7%;
-    z-index: -1;
-    fill: hsla(0, 0%, 0%, 0.2);
-    @media screen and (min-width: 768px) {
-      margin-top: 4%;
-      margin-left: 3.9%;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-top: 3%;
-      margin-left: 3%;
-    }
+    margin-top: 34px;
   }
 }
 
@@ -85,5 +64,51 @@
   @media screen and (min-width: 1280px) {
     width: 750px;
     padding-top: 47px;
+  }
+}
+.reviews__comment::before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  height: 40px;
+  width: 54px;
+  top: 145px;
+  left: 60px;
+  background-image: url('/images/reviews/quotes.png');
+  background-size: contain;
+  @media screen and (min-width: 480px) {
+    top: 29%;
+    left: 13.5%;
+  }
+  @media screen and (min-width: 768px) {
+    top: 35%;
+    left: 15.5%;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 40.1%;
+    left: 11%;
+  }
+}
+.swiper-slide::before {
+  content: ' ';
+  position: absolute;
+  z-index: 50;
+  height: 4px;
+  width: 32px;
+  bottom: 15%;
+  left: 45.5%;
+  background-image: url('/images/reviews/rings.png');
+  background-size: auto;
+  @media screen and (min-width: 480px) {
+    bottom: 15%;
+    left: 46.5%;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 20%;
+    left: 47.5%;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 23%;
+    left: 48.5%;
   }
 }
