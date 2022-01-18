@@ -1,68 +1,103 @@
-<header class="header">
+<header class="header container">
     <div class="header__container">
         <div class="logo">
-            <div class="header__logo" href="">
-                <img src="./images/logo-1x.png" 
-                srcset="./images/logo-1x.png 1x" 
+            <img class="logo__img" src="./images/logo-1x.png" srcset="./images/logo-1x.png 1x"
                 srcset="/images/logo-2x.png 2x" alt="logo">
-            </div>
         </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <svg class="nav__list--close" width="25" height="25">
-                    <use class="icon-close" href="./images/icons.svg#icon-close"></use>
-                </svg>
-
-                <button class="header__button-buy button" type="button">
-                    <span>Buy now ></span>
-                </button>
-
-                <li class="nav__item"><a class="nav__link--color" href="./index.html">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#about-us">About us</a></li>
-                <li class="nav__item"><a class="nav__link" href="#how-its-made">How it's made?</a></li>
-                <li class="nav__item"><a class="nav__link" href="#our-products">Our products</a></li>
-                <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+        <nav>
+            <ul class="header__nav-items">
+                <li class="header__nav-item">
+                    <a class="header__nav-link header__nav-link--red" href="./index.html">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#about-us">About us</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#how-its-made">How it's made?</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#our-products">Our products</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#contacts">Contacts</a>
+                </li>
             </ul>
-            <button class="header__menu-open button" type="button">
-                <svg class="header__icons" width="25" height="25">
-                    <use class="header__icon-open" href="./images/icons.svg#icon-open-menu"></use>
-                </svg>
-            </button>
-            <button class="header__button-buy button" type="button">
-                <span>Buy now ></span>
-            </button>
         </nav>
+        <button class="btn header__button-menu" type="button">
+            <svg class="header__icons" width="25" height="25">
+                <use class="header__icon-open" href="./images/icons.svg#icon-open-menu"></use>
+            </svg>
+        </button>
+        <button class="btn header__button" type="button">
+            <span>Buy now ></span>
+        </button>
     </div>
-</header>
+    ​
+    <div class="header__table-menu">
+        <button class="btn" type="button">
+            <svg class="nav__list--close" width="25" height="25">
+                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav>
+            <ul class="header__nav-items">
+                <li class="header__nav-item">
+                    <a class="header__nav-link header__nav-link--red" href="./index.html">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#about-us">About us</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#how-its-made">How it's made?</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#our-products">Our products</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="header__button-buy button" type="button">
+            <span>Buy now ></span>
+        </button>
+        ​
+    </div>
+    <div class="header__title-thumb">
+        <h1 class="header__title">ice cream made with <span class="header__title-red">passion</span></h1>
+        <div class="header__title-buttons">
+            <button class="btn header__title-button--red" type="button">Products</button>
+            <button class="btn header__title-button--white" type="button">How it's made?</button>
+        </div>
+    </div>
+    ​
+    <div class="header__img-milk-thumb">
+        <picture>
+            <source srcset="./images/hero/milk-1x-mac.png 1x,
+                            ./images/hero/milk-2x-mac.png 2x
+                            " media="(min-width: 1280px)">
+            <source srcset="./images/hero/milk-1x-tab.png 1x,
+                            ./images/hero/milk-2x-tab.png 2x
+                            " media="(min-width: 768px)">
+        </picture>
+        <img class="hero-img" src="./images/hero/milk-1x-mac.png" alt="milk">
 
-<div class="hero">
-    <div class="left">
-        <div class="info">
-            <h1 class="info__text">ice cream<br>made with<br><span class="info__text--color">passion</span></h1>
-            <div class="buttons">
-                <a class="buttons__products" href="">Products</a>
-                <a class="buttons__made" href="">How it's made?</a>
-            </div>
-        </div>
-        <div class="hero__milk">
-            <picture>
-                <source srcset="./images/hero/milk-1x-mac.png 1x,
-                                ./images/hero/milk-2x-mac.png 2x
-                                " media="(min-width: 1280px)">
-                <source srcset="./images/hero/milk-1x-tab.png 1x,
-                                ./images/hero/milk-2x-tab.png 2x
-                                " media="(min-width: 768px)">
-            </picture>
-            <img  class="hero-img" src="./images/hero/milk-1x-mac.png" alt="milk">
-            <div class="hero__text-wrap">
-                <p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit rem saepe voluptatibus repellendus. This is a text</p>
-                <button class="hero__arrow">
-                    <img src="./images/arrow-1x.png" alt="arrow">
-                </button>
-            </div>
-        </div>
     </div>
-    <div class="big-icecream">
+    <div class="header__text-milk-wrap">
+        <p class="header__text-milk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit rem
+            saepe voluptatibus repellendus. This is a text</p>
+    </div>
+    <button class="header__milk-button">
+        <svg width="24 " height="20" xmlns="http://www.w3.org/2000/svg" class="products__button-svg"
+            viewBox="0 0 512 512">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                d="M268 112l144 144-144 144M392 256H100" />
+        </svg>
+    </button>
+
+
+
+    <div class="header__big-icecream">
         <picture>
             <source srcset="./images/hero/icecream-1x-mac.png 1x,
                             ./images/hero/icecream-2x-mac.png 2x
@@ -76,31 +111,36 @@
         </picture>
         <img class="big-icecream" src="./images/hero/icecream-1x-mac.png" alt="Icecream">
     </div>
-    <div class="circle"></div>
-    <div class="right">
-        <ul class="hero__list--numbers">
-            <li class="hero__first">16</li>
-            <li class="hero__cafes">cafes</li>
-            <span class="hero__circle__small"></span>
-            <li class="hero__second">23</li>
-            <li class="hero__trucks">food trucks</li>
-            <span class="hero__circle__small"></span>
-        </ul>
+    ​
+    <div class="header__circle"></div>
+    <div class="header__right-text-container">
+        <div class="header__right-text-thumb">
+            <div class="header__right-text-number">16<div class="header__right-text-circle"></div>
+            </div>
+            <div class="header__right-text-desk">cafes</div>
+        </div>
+        <div class="header__right-text-thumb"></div>
+        <div class="header__right-text-number">23<div class="header__right-text-circle"></div>
+        </div>
+        <div class="header__right-text-desk">food trucks</div>
 
-        <div class="so-tasty">
-            <picture>
-                <source srcset="./images/hero/girl-1x-mac.png 1x,
+    </div>
+    </div>
+    <div class="header__so-tasty-img-thumb">
+        <picture>
+            <source srcset="./images/hero/girl-1x-mac.png 1x,
                                 ./images/hero/girl-2x-mac.png
                                 " media="(min-width: 1280px)">
-                <source srcset="./images/hero/girl-1x-tab.png 1x,
+            <source srcset="./images/hero/girl-1x-tab.png 1x,
                                 ./images/hero/girl-2x-tab.png 2x
                                 " media="(min-width: 768px)">
-            </picture>
-            <img src="./images/hero/girl-1x-mac.png" alt="So Tasty">
-        </div>
+        </picture>
+        <img src="./images/hero/girl-1x-mac.png" alt="So Tasty">
     </div>
-</div>
 
+    ​
+    ​
+</header>
 
 
 
