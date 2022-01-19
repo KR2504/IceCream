@@ -23,7 +23,7 @@
     height: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
   }
 
   &__item {
@@ -44,16 +44,16 @@
     @media screen and (min-width: 768px) {
       width: 180px;
       margin-left: 60px;
-      &:nth-child(n)::before {
-        margin-bottom: 36px !important;
-      }
+      // &:nth-child(n)::before {
+      //   margin-bottom: 36px !important;
+      // }
     }
     @media screen and (min-width: 1280px) {
       width: 330px;
       margin-left: 30px;
-      &:nth-child(n)::before {
-        margin-bottom: 40px !important;
-      }
+      // &:nth-child(n)::before {
+      //   margin-bottom: 40px !important;
+      // }
     }
   }
 
@@ -66,18 +66,21 @@
     text-transform: uppercase;
     color: $first-accent-color;
     margin-bottom: 15px;
+    margin-top: 16px;
 
     @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: 1.15;
 
       text-transform: lowercase;
+      margin-top: 36px;
     }
     @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: 1.14;
 
       margin-bottom: 13px;
+      margin-top: 40px;
     }
   }
 
