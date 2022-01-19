@@ -8,33 +8,52 @@
       display: flex;
       width: auto;
       margin-left: -60px;
-      // padding-bottom: 140px;
     }
     @media screen and (min-width: 1280px) {
       margin-left: -30px;
     }
   }
 
+  %pseudoIcon {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+  }
+
   &__item {
     margin-top: 38px;
+    &:nth-child(1)::before {
+      background-image: url(/images/advantages/udder.png);
+      @extend %pseudoIcon;
+    }
+    &:nth-child(2)::before {
+      background-image: url(/images/advantages/apple.png);
+      @extend %pseudoIcon;
+    }
+    &:nth-child(3)::before {
+      background-image: url(/images/advantages/icecream.png);
+      @extend %pseudoIcon;
+    }
+
     @media screen and (min-width: 768px) {
       width: 180px;
       margin-left: 60px;
+      &:nth-child(n)::before {
+        margin-bottom: 36px !important;
+      }
     }
     @media screen and (min-width: 1280px) {
       width: 330px;
       margin-left: 30px;
-    }
-  }
-
-  &__icon {
-    fill: $secondary-accent-color;
-    margin-bottom: 16px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 36px;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 40px;
+      &:nth-child(n)::before {
+        margin-bottom: 40px !important;
+      }
     }
   }
 
@@ -47,6 +66,7 @@
     text-transform: uppercase;
     color: $first-accent-color;
     margin-bottom: 15px;
+
     @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: 1.15;
